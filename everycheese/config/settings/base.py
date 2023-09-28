@@ -75,12 +75,13 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "django_countries"  # CountryField
 ]
 
 LOCAL_APPS = [
-    "everycheese.users.apps.UsersConfig", # custom users app
-    "everycheese.cheeses.apps.CheesesConfig", # cheese info app
+    "everycheese.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "everycheese.cheeses.apps.CheesesConfig"
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -236,7 +237,7 @@ EMAIL_TIMEOUT = 5
 # Django Admin URL.
 ADMIN_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("richard viens", "richard.viens444@outlook.com")]
+ADMINS = [("Richard Viens", "richard.viens444@outlook.com")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 
